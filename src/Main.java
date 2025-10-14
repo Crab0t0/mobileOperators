@@ -4,14 +4,14 @@ public class Main {
     public static void main(String[] args) {
         int initialAccount = 100; //начальный счёт
         int replenishment = 1100; // сумма пополнения
-        int i;// условие
+        int bonusСalculation;// расчёт бонусов
         if (replenishment > 1000) {
-            i= replenishment / 100;
+            bonusСalculation= replenishment / 100;
         } else {
-            i = 0;
+            bonusСalculation = 0;
         }
-        int bonus = i;;//бонусы
-        int totalScore = initialAccount + replenishment + i;//итоговый счёт
+        int bonus = bonusСalculation;;//бонусы
+        int totalScore = initialAccount + replenishment + bonusСalculation;//итоговый счёт
         System.out.println("Итоговый счёт: " + totalScore + ". Количество бонусных рублей: " + bonus + ".");
 
 
