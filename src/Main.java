@@ -6,11 +6,12 @@ public class Main {
         int replenishment = 1100; // сумма пополнения
         int bonusСalculation;// расчёт бонусов
         if (replenishment > 1000) {
-            bonusСalculation= replenishment / 100;
+            bonusСalculation = replenishment / 100;
         } else {
             bonusСalculation = 0;
         }
-        int bonus = bonusСalculation;;//бонусы
+        int bonus = bonusСalculation;
+        ;
         int totalScore = initialAccount + replenishment + bonusСalculation;//итоговый счёт
         System.out.println("Итоговый счёт: " + totalScore + ". Количество бонусных рублей: " + bonus + ".");
 
